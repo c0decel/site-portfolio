@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lexend+Deca&display=swap" rel="stylesheet">
+    <title id="top">Case Study</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Transparent Storefront</h1>
+      <nav>
+        <ul role ="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="#overview" role="menuitem" class="navigation-list__item">Overview</a>
+          </li>
+          <li role="presentation">
+            <a href="#process" role="menuitem" class="navigation-list__item">Process</a>
+          </li>
+          <li role="presentation">
+            <a href="#credits" role="menuitem" class="navigation-list__item">Credits</a>
+          </li>
+          <li role="presentation">
+            <a href="#screenshots" role="menuitem" class="navigation-list__item">Screenshots</a>
+          </li>
+          <li role="presentation">
+            <a href="#retrospective" role="menuitem" class="navigation-list__item">Retrospective</a>
+          </li>
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item">Go back</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+      <main>
+      <div class="section" id="overview">
+        <div class="overview-content">
+          <h2>Overview</h2>
+          <p>
+            Transparent Storefront is a commerce template developed with the MERN stack that allows users to display financial data and production to their customers
+          </p>
+
+          <h2>Purpose and context</h2>
+          <p>
+            I created this template as a resource for business owners to publically display records and details that customers and clients don't normally see. There has been an increase of ethical consumers who are conscious about how and where they spend their money, and small businesses can use this to their advantage by offering transparency of company operations in order to built trust with customers.  
+
+          </p>
+
+          <h2>Objective</h2>
+          <p>
+            The goals were to make a free template with unique for small business owners that is easy to set up and use, and to have a detailed full stack project to display on my portfolio.
+          </p>
+        </div>
+      </div>
+
+      <div class="section" id="screenshots">
+        <h2>Screenshots</h2>
+        <div class="grid">
+          <div>
+            <img class="grid__item__screenshot" src="./img/casestudy/products.PNG">
+            <p class="caption">
+              Homepage
+            </p>
+          </div>
+          <div>
+            <img class="grid__item__screenshot" src="./img/casestudy/cart.PNG">
+            <p class="caption">
+              Cart
+            </p>
+          </div>
+          <div>
+            <img class="grid__item__screenshot" src="./img/casestudy/product_details.PNG">
+            <p class="caption">
+              Product details
+            </p>
+          </div>
+          <div>
+            <img class="grid__item__screenshot" src="./img/casestudy/new_product.PNG">
+            <p class="caption">
+              New product page
+            </p>
+          </div>
+          <div>
+            <img class="grid__item__screenshot" src="./img/casestudy/reviews.PNG">
+            <p class="caption">
+              Reviews
+            </p>
+          </div>
+          <div>
+            <img class="grid__item__screenshot" src="./img/casestudy/admin_panel.PNG">
+            <p class="caption">
+              Admin panel
+            </p>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="section" id="process">
+        <h2>Process</h2>
+        <p>First I created a new Angular project and set up a few basic pages and functions, and made a mock API to test them out on. I did this to get a good idea of how to structure the actual API.</p>
+        <p>Next I created a MongoDB database, my models, and some basic features such as creating users, products, and tags.</p>
+        <p>Next I added some security features like CORS, user authentication, and admin permissions and tested my endpoints. Once everything worked, I deployed my API to Heroku.</p>
+        <p>Finally I replaced the mock data on the front end with my live API and fully fleshed out the placeholder functions and set up admin powers.</p>
+      </div>
+      
+      <div class="section" id="retrospective">
+        <div class="grid">
+          <div class="grid__item">
+            <h2>Successes</h2>
+            <p>I think that this project improved my ability to narrow down where errors originate from and fix them quickly, which is something I struggled with before that led to me taking longer than neccessary to get past errors.</p>
+            <p>It also gave me a better understanding of how Angular works, and how to test and determine if errors originate from the front end or back end.</p>
+          </div>
+
+          <div class="grid__item">
+            <h2>Challenges</h2>
+            <p>Most of the challenges I came across related to making sure my front end was compatible with my endpoints. After getting ahold of it it became much easier to find where errors were originating.</p>
+            <p>Another challenge I had was linking different parts of different models together, but doing so gave me a better understanding of how to best pass information around the database as well as structure it for more complex and frequently changing data.</p>
+            <p>This project took longer than expected due to the size, and a few features were harder to implement than initially thought.</p>
+            <p>I found that adding features in "steps" helps to keep me on track and organized, and it also requires less going back and modifying things to make them accomodate different features or changes.</p>
+          </div>
+
+          <div class="grid__item">
+            <h2>Future steps</h2>
+            <p>I plan to continue adding features and tools such as supply inventory, batch numbers, and a rewards system.</p>
+          </div>
+
+          <div class="grid__item">
+            <h2>Thoughts</h2>
+            <p>I think this project was worth the time put into it, and it displays my understanding of both front end and back end development.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="credits">
+        <h2>Credits</h2>
+        <p>Role: Lead Developer</p>
+      </div>
+      </main>
+      <footer class="page-footer">
+        <p>Where I'm at</p>
+          <div class="social-media">
+          <a href="https://github.com/c0decel"><img src="img/git.svg" alt="Github"></a>
+          <a href="https://twitter.com"><img src="img/twit.svg" alt="Twitter"></a>
+          <a href="https://www.linkedin.com/in/thimade/"><img src="img/linked.svg" alt="LinkedIn"></a>
+        </div>
+      </footer>
+      <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
