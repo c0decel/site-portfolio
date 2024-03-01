@@ -46,7 +46,7 @@
 
           <h2>Purpose and context</h2>
           <p>
-            I created this template as a resource for business owners to publically display records and details that customers and clients don't normally see. There has been an increase of ethical consumers who are conscious about how and where they spend their money, and small businesses can use this to their advantage by offering transparency of company operations in order to built trust with customers.  
+            I created this template as a resource for business owners to publicly display records and details that customers and clients don't normally see. There has been an increase of ethical consumers who are conscious about how and where they spend their money, and small businesses can use this to their advantage by offering transparency of company operations in order to built trust with customers.  
 
           </p>
 
@@ -59,45 +59,91 @@
 
       <div class="section" id="screenshots">
         <h2>Screenshots</h2>
-        <div class="grid">
-          <div>
-            <img class="grid__item__screenshot" src="./img/casestudy/products.PNG">
+        <div class="gallery">
+          <div class="image_container">
+            <img src="./img/casestudy/products.PNG">
             <p class="caption">
-              Homepage
+              This is the first page users see upon visiting the site. I don't think it looks bad! It displays three basic product cards on larger screens and one on mobile. That's basically all there is to it.
             </p>
           </div>
-          <div>
-            <img class="grid__item__screenshot" src="./img/casestudy/cart.PNG">
+          <div class="image_container">
+            <img src="./img/casestudy/signup.PNG">
             <p class="caption">
-              Cart
+              New users sign up here.
             </p>
           </div>
-          <div>
-            <img class="grid__item__screenshot" src="./img/casestudy/product_details.PNG">
+          <div class="image_container">
+            <img src="./img/casestudy/login.PNG">
             <p class="caption">
-              Product details
+              Returning users log in here.
             </p>
           </div>
-          <div>
-            <img class="grid__item__screenshot" src="./img/casestudy/new_product.PNG">
+          <div class="image_container">
+            <img src="./img/casestudy/product_details.PNG">
             <p class="caption">
-              New product page
+              Product details page, also contains the reviews section. It was a bit difficult figuring out how to pass the product details
+              to the details template, but everything else was pretty easy. I want to possibly get rid of some of the whitespace for better space usage,
+              but honestly that's low priority for the moment because I'm the only one working on this (for free!)
             </p>
           </div>
-          <div>
-            <img class="grid__item__screenshot" src="./img/casestudy/reviews.PNG">
+          <div class="image_container">
+            <img src="./img/casestudy/edit_stock.PNG">
             <p class="caption">
-              Reviews
+              Quick option to edit stock quantity for a product right under the product details. Only admins can see or use this.
             </p>
           </div>
-          <div>
-            <img class="grid__item__screenshot" src="./img/casestudy/admin_panel.PNG">
+          <div class="image_container">
+            <img src="./img/casestudy/reviews.PNG">
             <p class="caption">
-              Admin panel
+              Logged in users can write reviews on a product. This is where I had some trouble figuring out how to save them to a product and user.
+              I fixed this by making a separate model for reviews so that they could be assigned to a user and a product.
+            </p>
+          </div>
+          <div class="image_container">
+            <img src="./img/casestudy/cart.PNG">
+            <p class="caption">
+              Cart page for logged in users. This is also designed to be the checkout page. The reason there is a placeholder is because this is a template
+              and there is no reason to fully implement a payment processor when this site only contains sample data. This is also the reason for there being
+              no checkout, because commonly used payment processors offer checkout handling. Also, better peace of mind to leave tasks like processing credit
+              card numbers to the companies who have the money to deal with any liabilities that come along with handling that type of information.
+            </p>
+          </div>
+          <div class="image_container">
+            <img src="./img/casestudy/new_product.PNG">
+            <p class="caption">
+              New product page that can be accessed by users with admin permissions. Other than making sure permissions worked, this was pretty easy to
+              implement especially because NgModel is very simple and easy. That's not entirely true though because I did come across a problem when trying to use a checkbox menu to only assign
+              certain tags to a product without assigning all or none of them. It was mostly my fault because it ended up mostly being an error
+              on the back end. This is also why I made product tags a seperate model, to avoid users adding unnecessary duplicates.
+            </p>
+          </div>
+          <div class="image_container">
+            <img src="./img/casestudy/admin_panel.PNG">
+            <p class="caption">
+              Secret page for the eyes of admins only. Has a simple list of users and their information, and makes it easy to swing the banhammer
+              on any of them. 
+            </p>
+          </div>
+          <div class="image_container">
+            <img src="./img/casestudy/new_tag.PNG">
+            <p class="caption">
+              Admins can add new tags here as well as a description. This is the only place to add new tags so that they can be assigned to products.
+              Makes it easier to avoid duplicate tags.
+            </p>
+          </div>
+          <div class="image_container">
+            <img src="./img/casestudy/add_sales_expenses.png">
+            <p class="caption">
+              Admins can manually add sales or expenses. This is here for transactions like cash sales, or someone donating money. The expenses section is
+              for expenses like employee payments, supply restocks, or any other business related expenses such as adspace payments. Manually logged expenses and sales
+              can be added individually and detailed, or grouped into one amount with a simple description like "restocks". That's why there's a description option,
+              and admins can log this data however they please, it's their website. The reason for having these options is just to display the general dollar amounts to users 
+              for transparency.
             </p>
           </div>
         </div>
-      
+        <button class="prev-btn">&lt;</button>
+          <button class="next-btn">&gt;</button>
       </div>
 
       <div class="section" id="process">
@@ -112,7 +158,7 @@
         <div class="grid">
           <div class="grid__item">
             <h2>Successes</h2>
-            <p>I think that this project improved my ability to narrow down where errors originate from and fix them quickly, which is something I struggled with before that led to me taking longer than neccessary to get past errors.</p>
+            <p>I think that this project improved my ability to narrow down where errors originate from and fix them quickly, which is something I struggled with before that led to me taking longer than necessary to get past errors.</p>
             <p>It also gave me a better understanding of how Angular works, and how to test and determine if errors originate from the front end or back end.</p>
           </div>
 
@@ -121,7 +167,7 @@
             <p>Most of the challenges I came across related to making sure my front end was compatible with my endpoints. After getting ahold of it it became much easier to find where errors were originating.</p>
             <p>Another challenge I had was linking different parts of different models together, but doing so gave me a better understanding of how to best pass information around the database as well as structure it for more complex and frequently changing data.</p>
             <p>This project took longer than expected due to the size, and a few features were harder to implement than initially thought.</p>
-            <p>I found that adding features in "steps" helps to keep me on track and organized, and it also requires less going back and modifying things to make them accomodate different features or changes.</p>
+            <p>I found that adding features in "steps" helps to keep me on track and organized, and it also requires less going back and modifying things to make them accommodate different features or changes.</p>
           </div>
 
           <div class="grid__item">
@@ -131,7 +177,9 @@
 
           <div class="grid__item">
             <h2>Thoughts</h2>
-            <p>I think this project was worth the time put into it, and it displays my understanding of both front end and back end development.</p>
+            <p>I think this project was worth the time put into it, and it displays my understanding of both front end and back end development.
+              I enjoy using the Angular framework, I like how easy it is to organize my code and quickly add new features.
+            </p>
           </div>
         </div>
       </div>
@@ -149,5 +197,38 @@
         </div>
       </footer>
       <script src="js/tota11y.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const images = document.querySelectorAll('.image_container');
+          const prevBtn = document.querySelector('.prev-btn');
+          const nextBtn = document.querySelector('.next-btn');
+          let currentIndex = 0;
+      
+          function showImage(index) {
+            images.forEach((image, i) => {
+              if (i === index) {
+                image.style.display = 'block';
+              } else {
+                image.style.display = 'none';
+              }
+            });
+          }
+      
+          prevBtn.addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            console.log("Previous Button Clicked, currentIndex: ", currentIndex);
+            showImage(currentIndex);
+          });
+      
+          nextBtn.addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % images.length;
+            console.log("Next Button Clicked, currentIndex: ", currentIndex);
+            showImage(currentIndex);
+          });
+
+          showImage(currentIndex);
+        });
+      </script>
+      
   </body>
 </html>

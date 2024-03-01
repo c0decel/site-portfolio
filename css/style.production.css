@@ -280,10 +280,6 @@ navigation-list__item--active {
 	background-color: #9ceeff;
 }
 
-.grid__item__screenshot {
-	width: 450px;
-}
-
 #grid-container {
 
 	display: grid;
@@ -295,4 +291,34 @@ navigation-list__item--active {
 .overview-content {
     flex-grow: 1;
 	align-items: right;
+}
+
+.gallery {
+	display: flex;
+	overflow: hidden;
+}
+
+.image_container {
+	flex: 0 0 100%;
+}
+
+img {
+	width: 50%;
+	height: auto;
+  }
+
+.prev-btn, .next-btn {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
 }
