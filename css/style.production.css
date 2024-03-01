@@ -293,6 +293,15 @@ navigation-list__item--active {
 	align-items: right;
 }
 
+.social-media {
+	img {
+		width: 30px;
+	}
+}
+/*
+For case study screenshots
+*/
+
 .gallery {
 	display: flex;
 	overflow: hidden;
