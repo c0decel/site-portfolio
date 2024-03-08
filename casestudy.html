@@ -43,6 +43,7 @@
           <p>
             Transparent Storefront is a commerce template developed with the MERN stack that allows users to display financial data and production to their customers
           </p>
+          <img src="./img/casestudy/mainimg1.PNG">
 
           <h2>Purpose and context</h2>
           <p>
@@ -154,13 +155,78 @@
 
       <div class="section" id="process">
         <h2>Process</h2>
-        <p>First I created a new Angular project and set up a few basic pages and functions, and made a mock API to test them out on. I did this to get a good idea of how to structure the actual API.</p>
-        <p>Next I created a MongoDB database, my models, and some basic features such as creating users, products, and tags.</p>
-        <p>Next I added some security features like CORS, user authentication, and admin permissions and tested my endpoints. Once everything worked, I deployed my API to Heroku.</p>
-        <p>Finally I replaced the mock data on the front end with my live API and fully fleshed out the placeholder functions and set up admin powers.</p>
+        <h3>First I created a new Angular project and set up a few basic pages and functions, and made a mock API to test them out on. I did this to get a good idea of how to structure the actual API.</h3>
+        <div class="grid">
+          <div class="grid__item">
+            <a href="./img/casestudy/mock_api.PNG" target="_blank" class="image_grid_item">
+              <img style="width: 70%; padding: 20px;" src="./img/casestudy/mock_api.PNG">
+            </a>  
+            <p>Mock product for setting up front end.</p>
+          </div>
+          <div class="grid__item">
+            <a href="./img/casestudy/mock_api_2.PNG" target="_blank" class="image_grid_item">
+              <img style="width: 70%; padding: 20px;" src="./img/casestudy/mock_api_2.PNG">
+            </a> 
+            <p>Mock user data.</p> 
+          </div>
+        </div>
+        <h3>Next I created a MongoDB database, my models, and some basic features such as creating users, products, and tags.</h3>            
+        <div class="grid">
+          <div class="grid__item">
+            <a href="./img/casestudy/models_js.PNG" target="_blank">
+              <img style="width: 70%; padding: 20px;" src="./img/casestudy/models_js.PNG">
+            </a>
+            <p>Schemas for products and product reviews.</p>
+          </div>
+          <div class="grid__item">
+            <a href="./img/casestudy/models_js_2.PNG" target="_blank">
+              <img style="width: 70%; padding: 20px;" src="./img/casestudy/models_js_2.PNG">
+            </a>
+            <p>Schemas for users and tags.</p>
+          </div>
+        </div>  
+        <h3>Next I added some security features like CORS, user authentication, and admin permissions and tested my endpoints. Once everything worked, I deployed my API to Heroku.</h3>
+        <div class="grid">
+          <div class="grid__item">
+            <a href="./img/casestudy/api_routes.PNG" target="_blank">
+              <img style="width: 70%; padding: 20px;" src="./img/casestudy/api_routes.PNG">
+            </a>
+            <p>Organized routes into files because there are a lot of them.</p>
+          </div>
+          <div class="grid__item">
+            <img src="./img/casestudy/app_fns.PNG" style="width: 100%; padding: 20px;">
+            <a href="./img/casestudy/auth_check.PNG" target="_blank">
+              <img style="width: 100%; padding: 20px;" src="./img/casestudy/auth_check.PNG">
+            </a>
+            <p>Separate file for commonly used functions (there's only one right now).</p>
+          </div>
+        </div>
+        <h3>Finally I replaced the mock data on the front end with my live API and fully fleshed out the placeholder functions and set up admin powers.</h3>
+        <div class="grid">
+          <div class="grid__item">
+            <a href="./img/casestudy/fetch_api_data.PNG" target="_blank">
+              <img style="width: 70%; padding: 20px;" src="./img/casestudy/fetch_api_data.PNG">
+            </a>
+            <p>File to fetch data from API.</p>
+          </div>
+          <div class="grid__item">
+            <a href="./img/casestudy/auth_check_ang.PNG" target="_blank">
+              <img style="width: 70%; padding: 20px;" src="./img/casestudy/auth_check_ang.PNG">
+            </a>
+            <p>Permission checks in Angular.</p>
+          </div>
+          <div class="grid__item">
+            <a href="./img/casestudy/auth_check_ang_2.PNG" target="_blank">
+              <img style="width: 70%; padding: 20px;" src="./img/casestudy/auth_check_ang_2.PNG">
+            </a>
+            <p>Permission checks rejecting basic users when they're being nosy in places that they SHOULD NOT be.</p>
+          </div>
+        </div>
       </div>
+
       
       <div class="section" id="retrospective">
+        <h1>Retrospective</h1>
         <div class="grid">
           <div class="grid__item">
             <h2>Successes</h2>
