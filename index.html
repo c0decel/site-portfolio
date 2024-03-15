@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lexend+Deca&display=swap" rel="stylesheet">
-    <title id="top">Mentheaul</title>
+    <title id="top">Portfolio</title>
   </head>
     <body>
       <header class="page-header">
-        <a href="index.html" aria-label="go to homepage"><img src="./img/placeholder.png" alt="placeholder logo" role="presentation" class="page-header__item navigation__logo"></a>
+        <a href="index.html" aria-label="go to homepage"><img src="./img/placeholder.png" alt="placeholder logo" role="presentation"></a>
         <nav>
           <ul role ="menubar" class="navigation-list">
             <li role="presentation">
@@ -29,19 +29,86 @@
       </header>
     <main>
         <div id="bio" class="section">
-        <h1>Hi friends</h1>
-        <p>I'm Madeline, a full stack web developer making a career change to expand my technology
-          knowledge and work in a problem solving environment. In my five years of customer service
-          positions I have honed my skills in problem solving, communication, flexibility and adaptability.
-          <br>
-          <br>
-          My role as a bakery manager, the position that inspired my career change, gave me the skills to
-          manage scheduling, budgeting, and to assign employees to roles and tasks that would maximize
-          profit and efficiency. My experience in this role taught me the importance of streamlining
-          processes and managing resources for a successful business. I am confident that my customer
-          service and managerial background will allow me to make a good addition to your development
-          team. </p>
-        <a href="https://github.com/c0decel">Check out some of my code</a>
+          <div class="grid__bio">
+          
+              <div class="grid__item" style="padding: 30px;">
+                <h1>Hi friends</h1>
+                  <p>I'm Madeline, a full stack web developer transitioning from customer service to pursue my passion for technology and problem-solving.
+                    Over the past five years, I've honed my skills in problem-solving, communication, flexibility, and adaptability through various customer service positions.
+                    <br>
+                    <br>
+                    My experience as a bakery manager, the catalyst for my career change, equipped me with invaluable skills in scheduling, budgeting, and employee management to optimize profitability and efficiency.
+                    This role underscored the importance of streamlining processes and resource management for business success.
+                    <br>
+                    <br>
+                    Utilizing my background in customer service, management, and custom cake decorating, I excel at deciphering client preferences and delivering exceptional results tailored to their needs.
+                    I am confident in my ability to leverage these skills to contribute effectively to your development team, providing client-focused solutions and ensuring project success.
+                    <br>
+                    <br>
+                    I highly value transparency with clients and embrace a growth-oriented mindset in the workplace.
+                    Prioritizing neutrality and input in interactions, I strive to listen to all sides and opinions for optimal outcomes for all parties involved.
+                    I am enthusiastic about joining companies that share these values, as I believe they foster a productive and successful workplace.
+                  </p>
+              </div>
+
+              <div class="grid">
+                <div class="grid__item">
+                  <h2>Hard skills</h2>
+                  <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Angular</li>
+                    <li>Django</li>
+                    <li>Python</li>
+                    <li>SQL and NoSQL databases</li>
+                  </ul>
+                </div>
+                <div class="grid__item">
+                  <h2>Soft skills</h2>
+                  <ul class="skills">
+                    <li>Problem-solving</li>
+                    <li>Communication</li>
+                    <li>Graphic design</li>
+                    <li>Detail-oriented</li>
+                    <li>Collaboration</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="grid__item">
+                <h2>Contact me</h2>
+                <div class="grid">
+                  <div style="padding: 10px;">
+                    <h3>Email:</h3>
+                    <form
+                      action="https://formspree.io/f/xbjnknop"
+                      method="POST"
+                    >
+                      <label>
+                        Your email: <br>
+                        <input type="email" name="email">
+                      </label><br>
+                      <label>
+                        Your message:<br>
+                        <textarea name="message"></textarea>
+                      </label><br>
+  
+                      <button type="submit">Send</button>
+                  </form>
+                  </div>
+
+                  <div style="padding: 10px;">
+                    <h3>Other places:</h3>
+                    <p>Telegram: <a href="https://t.me/mentheauls">mentheauls</a></p>
+                    <p>GitHub: <a href="https://github.com/c0decel">c0decel</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/thimade/">thimade</a></p>
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
       </div>
 
       
@@ -216,11 +283,12 @@
       
     </main>
       <footer class="page-footer" id="contact">
-        <p>Where I'm at</p>
+        <p style="font-size: 20px;">Where I'm at</p>
           <div class="social-media">
           <a href="https://github.com/c0decel"><img src="img/git.svg" alt="Github"></a>
           <a href="https://twitter.com"><img src="img/twit.svg" alt="Twitter"></a>
           <a href="https://www.linkedin.com/in/thimade/"><img src="img/linked.svg" alt="LinkedIn"></a>
+          <a href="https://t.me/mentheauls" alt="Telegram"><img src="img/tg.svg"></a>
         </div>
       </footer>
     <script src="js/tota11y.min.js"></script>
