@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lexend+Deca&display=swap" rel="stylesheet">
+        <title id="top">Recipe App</title>
+      </head>
+      <body>
+        <header class="page-header">
+            <h1>Recipe App</h1>
+            <nav>
+              <ul role ="menubar" class="navigation-list">
+                <li role="presentation">
+                  <a href="#overview" role="menuitem" class="navigation-list__item">Overview</a>
+                </li>
+                <li role="presentation">
+                  <a href="#process" role="menuitem" class="navigation-list__item">Process</a>
+                </li>
+                <li role="presentation">
+                  <a href="#credits" role="menuitem" class="navigation-list__item">Credits</a>
+                </li>
+                <li role="presentation">
+                  <a href="#screenshots" role="menuitem" class="navigation-list__item">Screenshots</a>
+                </li>
+                <li role="presentation">
+                  <a href="#retrospective" role="menuitem" class="navigation-list__item">Retrospective</a>
+                </li>
+                <li role="presentation">
+                  <a href="index.html" role="menuitem" class="navigation-list__item">Go back</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <main style="text-align: center;">
+            <div class="section" id="overview">
+                <div class="overview-content">
+                    <h1>Overview</h1>
+                    <div class="grid__item">
+                      <p>
+                        A Django web application with a database of recipes.
+                        Users can search by ingredients or recipe names,
+                        and view data about ingredient popularity.
+                      </p>
+                    </div>
+                    <img src="img/recipe_app.PNG">
+                    <div class="grid">
+                      <div class="grid__item">
+                        <h2>Purpose and context</h2>
+                        <p>
+                          This recipe app was made for a CareerFoundry project made with Django. 
+                          It is a database that contains different recipes and details like instructions, cooking time, ingredients, and difficulty level.
+                        </p>
+                      </div>
+                      <div class="grid__item">
+                        <h2>Objective</h2>
+                        <p>
+                          The goal of this project was to make a full Django application and use data visualization tools to show information about recipes.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="screenshots">
+              <h1>Screenshots</h1>
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+                <div class="gallery">
+                    <div class="image_container">
+                      <a href="./img/recipe_app/home.PNG" target="_blank" class="image_grid_item">
+                        <img src="./img/recipe_app/home.PNG">
+                      </a>
+                      <p class="caption">
+                        Homepage
+                      </p>
+                    </div>
+                    <div class="image_container">
+                      <a href="./img/recipe_app/all_recipes.PNG" target="_blank" class="image_grid_item">
+                        <img src="./img/recipe_app/all_recipes.PNG">
+                      </a>                   
+                      <p class="caption">
+                        Recipe cards on all recipes page
+                      </p>
+                    </div>
+                    <div class="image_container">
+                      <a href="./img/recipe_app/recipe_details.PNG" target="_blank" class="image_grid_item">
+                        <img src="./img/recipe_app/recipe_details.PNG">
+                      </a>
+                        <p class="caption">
+                            Average recipe details page.
+                        </p>
+                    </div>
+                    <div class="image_container">
+                      <a href="./img/recipe_app/login.PNG" target="_blank" class="image_grid_item">
+                        <img src="./img/recipe_app/login.PNG">
+                      </a>
+                      <p class="caption">
+                        Login page.
+                      </p>
+                    </div>
+                    <div class="image_container">
+                      <a href="./img/recipe_app/records_no_search.PNG" target="_blank" class="image_grid_item">
+                        <img src="./img/recipe_app/records_no_search.PNG">
+                      </a>
+                      <p class="caption">
+                        Records page.
+                      </p>
+                    </div>
+                    <div class="image_container">
+                      <a href="./img/recipe_app/records_searched.PNG" target="_blank" class="image_grid_item">
+                        <img src="./img/recipe_app/records_searched.PNG">
+                      </a>
+                      <p class="caption">
+                        Search results for an ingredient.
+                      </p>
+                    </div>
+                    <div class="image_container">
+                      <a href="./img/recipe_app/search_bar_chart.PNG" target="_blank" class="image_grid_item">
+                        <img src="./img/recipe_app/search_bar_chart.PNG">
+                      </a>
+                      <p class="caption">
+                        Bar chart showing number of recipes containing searched ingredient over time.
+                      </p>
+                    </div>
+                    <div class="image_container">
+                      <a href="./img/recipe_app/search_pie_chart.PNG" target="_blank" class="image_grid_item">
+                        <img src="./img/recipe_app/search_pie_chart.PNG">
+                      </a>
+                      <p class="caption">
+                        Pie chart showing the percentage of recipes that the searched ingredient appears in.
+                      </p>
+                    </div>
+                    <div class="image_container">
+                      <a href="./img/recipe_app/search_line_chart.PNG" target="_blank" class="image_grid_item">
+                        <img src="./img/recipe_app/search_line_chart.PNG">
+                      </a>
+                      <p class="caption">
+                        Line chart showing number of recipes containing searched ingredient over time in comparison to all other unique ingredients.
+                      </p>
+                    </div>
+                    <div class="image_container">
+                      <a href="./img/recipe_app/recipe_searched.PNG" target="_blank" class="image_grid_item">
+                        <img src="./img/recipe_app/recipe_searched.PNG">
+                      </a>
+                      <p class="caption">
+                        Results when you search for a recipe by name.
+                      </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="process">
+                <h1>Process</h1>
+                <h3>First I created a model for my recipes, and some functions like splitting ingredients into a list and calculating the recipe difficulty.</h3>
+                <div class="grid">
+                    <div class="grid__item">
+                        <a href="./img/recipe_app/recipe_model.PNG" target="_blank" class="image_grid_item">
+                            <img class="gallery_image" src="./img/recipe_app/recipe_model.PNG">
+                        </a>
+                        <p>Model for recipes.</p>
+                    </div>
+                    <div class="grid__item">
+                      <a href="./img/recipe_app/run_migrations.PNG" target="_blank" class="image_grid_item">
+                          <img class="gallery_image" src="./img/recipe_app/run_migrations.PNG">
+                      </a>
+                      <p>Migrating the new database changes.</p>
+                    </div>
+                    <div class="grid__item">
+                      <a href="./img/recipe_app/recipe_model_2.PNG" target="_blank" class="image_grid_item">
+                          <img class="gallery_image" src="./img/recipe_app/recipe_model_2.PNG">
+                      </a>
+                      <p>Functions for the model.</p>
+                    </div>
+                </div>
+                <h3>Next I created a superuser so I could add a few recipes.</h3>
+                <div class="grid">
+                  <div class="grid__item">
+                    <a href="./img/recipe_app/edit_recipe.PNG" target="_blank" class="image_grid_item">
+                        <img class="gallery_image" src="./img/recipe_app/edit_recipe.PNG">
+                    </a>
+                    <p>Adding a new recipe through the admin panel.</p>
+                  </div>
+                  <div class="grid__item">
+                  <a href="./img/recipe_app/all_recipes_admin_panel.PNG" target="_blank" class="image_grid_item">
+                      <img class="gallery_image" src="./img/recipe_app/all_recipes_admin_panel.PNG">
+                  </a>
+                  <p>
+                    Viewing all recpes in admin panel.
+                  </p>
+                  </div>
+                </div>
+                <h3>After that I made HTML templates for the recipes and details, and some custom images like a banner and logo.</h3>
+                <div class="grid">
+                  <div class="grid__item">
+                    <a href="./img/recipe_app/welcome_blank.PNG" target="_blank" class="image_grid_item">
+                        <img src="./img/recipe_app/welcome_blank.PNG" class="gallery_image">
+                    </a>
+                    <a href="./img/recipe_app/home.PNG" target="_blank" class="image_grid_item">
+                      <img src="./img/recipe_app/home.PNG" class="gallery_image">
+                    </a>
+                    <p>
+                      Before and after styling homepage.
+                    </p>
+                    </div>
+                    <div class="grid__item">
+                      <a href="./img/recipe_app/custom_icons.PNG" target="_blank" class="image_grid_item">
+                          <img src="./img/recipe_app/custom_icons.PNG" class="gallery_image">
+                      </a>
+                      <p>
+                        Custom images and icons.
+                      </p>
+                      </div>
+                </div>
+                <h3>After styling everything, I used QuerySet and Pandas to visualize data about recipes in the database.</h3>
+                <div class="grid">
+                  <div class="grid__item">
+                    <img src="./img/recipe_app/pln_1.PNG" class="gallery_image">
+                    <img src="./img/recipe_app/pln_2.PNG" class="gallery_image">
+                    <img src="./img/recipe_app/pln_3.PNG" class="gallery_image">
+                    <img src="./img/recipe_app/pln_4.PNG" class="gallery_image">
+                    <p>
+                      Deciding what type of data to show on different graphs.
+                    </p>
+                  </div>
+                  <div class="grid__item">
+                    <a href="./img/recipe_app/form_py.PNG" target="_blank" class="image_grid_item">
+                        <img src="./img/recipe_app/form_py.PNG" class="gallery_image">
+                    </a>
+                    <p>
+                      Form options for a recipe or ingredient search. 
+                    </p>
+                    <a href="./img/recipe_app/req_records.PNG" target="_blank" class="image_grid_item">
+                      <img src="./img/recipe_app/req_records.PNG" class="gallery_image">
+                    </a>
+                    <p>
+                      Function to request records from a search query.
+                    </p>
+                </div>
+                <div class="grid__item">
+                  <a href="./img/recipe_app/get_chart.PNG" target="_blank" class="image_grid_item">
+                    <img src="./img/recipe_app/get_chart.PNG" class="gallery_image">
+                  </a>
+                  <p>
+                    Function to create a chart based on the user's query and requested chart type.
+                  </p>
+                </div>
+                <div class="grid__item">
+                  <a href="./img/recipe_app/get_graph.PNG" target="_blank" class="image_grid_item">
+                    <img src="./img/recipe_app/get_graph.PNG" class="gallery_image">
+                  </a>
+                  <p>
+                    Function to actually visualize the data and create a graph.
+                  </p>
+                </div>
+                </div>
+            </div>
+
+            <div class="section" id="retrospective">
+              <h1>Retrospective</h1>
+                <div class="grid">
+                    <div class="grid__item">
+                        <h2>Successes</h2>
+                        <p>
+                          I really like how my data visualization section turned out. I think I made a good decision deciding
+                          which types of data to display that would give users the most useful information when they
+                          search for recipes. This project gave me a good understanding on how to create and host a Django project.
+                        </p>
+                    </div>
+                    <div class="grid__item">
+                        <h2>Challenges</h2>
+                        <p>
+                            I had a few issues with getting my static files to work at first, but once I got familiar with the project file structures it became much easier.
+                            I also had some issues at first relating to making database migrations but got the hang of it after a few errors.
+                        </p>
+                    </div>
+                    <div class="grid__item">
+                        <h2>Future steps</h2>
+                        <p>
+                            I would like to add ingredient quantities or even a separate model for saving more detailed information about ingredients,
+                            such as common uses and average price per ounce.
+                        </p>
+                    </div>
+                    <div class="grid__item">
+                        <h2>Thoughts</h2>
+                        <p>
+                            I enjoyed getting to learn Django and Python in general.
+                            Learning how to use QuerySet and Pandas was also very beneficial.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="credits">
+                <h1>Credits</h1>
+                <p>
+                  Role: Lead Developer
+                </p><br>
+                <p>
+                  Mentor: James Wilson
+                </p>
+            </div>
+          </main>
+          <footer class="page-footer">
+            <p>Where I'm at</p>
+              <div class="social-media">
+              <a href="https://github.com/c0decel"><img src="img/git.svg" alt="Github"></a>
+              <a href="https://twitter.com"><img src="img/twit.svg" alt="Twitter"></a>
+              <a href="https://www.linkedin.com/in/thimade/"><img src="img/linked.svg" alt="LinkedIn"></a>
+              <a href="https://t.me/mentheauls" alt="Telegram"><img src="img/tg.svg"></a>
+            </div>
+          </footer>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const images = document.querySelectorAll('.image_container');
+              const prevBtn = document.querySelector('.prev-btn');
+              const nextBtn = document.querySelector('.next-btn');
+              let currentIndex = 0;
+          
+              function showImage(index) {
+                images.forEach((image, i) => {
+                  if (i === index) {
+                    image.style.display = 'block';
+                  } else {
+                    image.style.display = 'none';
+                  }
+                });
+              }
+          
+              prevBtn.addEventListener('click', function() {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                console.log("Previous Button Clicked, currentIndex: ", currentIndex);
+                showImage(currentIndex);
+              });
+          
+              nextBtn.addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % images.length;
+                console.log("Next Button Clicked, currentIndex: ", currentIndex);
+                showImage(currentIndex);
+              });
+    
+              showImage(currentIndex);
+            });
+          </script>
+      </body>
+</html>
