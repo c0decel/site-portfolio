@@ -259,12 +259,13 @@ For case study screenshots
 
 .image_container {
 	flex: 0 0 100%;
+
+	img {
+		width: 30%;
+	}
 }
 
-img {
-	width: 50%;
-	height: auto;
-  }
+
 
 .prev-btn, .next-btn {
   padding: 10px;
