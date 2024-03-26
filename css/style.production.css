@@ -90,20 +90,7 @@ ul {
 }
 
 button {
-	border: none;
-  	padding: 10px;
-  	border-radius: 3px;
-  	font-size: 16px;
 	cursor: pointer;
-}
-
-.primary-button {
-	font-family: 'Alata', sans-serif;
-	background-color: #9756FF;
-	color: white;
-}
-
-button {
 	border: none;
 	display: inline-block;
 	font-family: 'Alata', sans-serif;
@@ -198,19 +185,19 @@ button {
   grid-gap: 10px;
 }
 
+.skill_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
 .grid__bio {
 	display: flex;
 	flex-direction: column;
 	margin: 10px;
 }
 
-.grid_row {
-	display: flex;
-	flex-direction: row;
-	margin: 10px;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 	.grid {
 	  grid-template-columns: 1fr;
 
@@ -218,6 +205,11 @@ button {
 		width: 200px;
 	}
 	}
+
+	.skill_grid {
+		grid-template-columns: 1fr;
+	}
+
 	.portfolio-img {
 		width: 100%;
 		padding: 10px;
