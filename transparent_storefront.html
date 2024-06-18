@@ -42,7 +42,7 @@
           <h1>Overview</h1>
           <div class="grid__item">
             <p>
-              Transparent Storefront is a commerce template developed with the MEAN stack that allows users to display financial data and production to their customers
+              Transparent Storefront is a commerce template developed with the MERN stack that allows users to display financial data and production to their customers
             </p>
           </div>
           <img src="./img/transparent_storefront/mainimg1.PNG">
@@ -102,6 +102,14 @@
             </p>
           </div>
           <div class="image_container">
+            <a href="./img/transparent_storefront/related_threads.PNG" target="_blank" class="image_grid_item">
+              <img src="./img/transparent_storefront/related_threads.PNG">
+            </a>
+            <p class="caption">
+              Threads that contain the title of a product will show up under the details of the mentioned products so users can easily find discussions about it.
+            </p>
+          </div>
+          <div class="image_container">
             <a href="./img/transparent_storefront/edit_stock.PNG" target="_blank" class="image_grid_item">
               <img src="./img/transparent_storefront/edit_stock.PNG">
             </a>
@@ -134,11 +142,7 @@
               <img src="./img/transparent_storefront/new_product.PNG">
             </a>
             <p class="caption">
-              New product page that can be accessed by users with admin permissions. Other than making sure permissions worked, this was pretty easy to
-              implement especially because NgModel is very simple and easy. That's not entirely true though because I did come across a problem when trying to use a checkbox menu to only assign
-              certain tags to a product without assigning all or none of them. It was mostly my fault because it ended up mostly being an error
-              on the back end. This is also why I made product tags a seperate model, to avoid users adding unnecessary duplicates.
-              Also has an option to add new supplies that are publicly shown to users.
+              Page to add new information such as sales, expenses, products, tags, and supplies. Also has a table of products to easily feature or delete any.
             </p>
           </div>
           <div class="image_container">
@@ -146,8 +150,7 @@
               <img src="./img/transparent_storefront/admin_panel.PNG">
             </a>
             <p class="caption">
-              Secret page for the eyes of admins only. Has a simple list of users and their information, and makes it easy to swing the banhammer
-              on any of them. 
+              Secret page for the eyes of admins only. Has a simple table of users and their permissions. Also has a list of all purchases and their status.
             </p>
           </div>
           <div class="image_container">
@@ -155,12 +158,7 @@
               <img src="./img/transparent_storefront/new_tag.PNG">
             </a>
             <p class="caption">
-              Admins can add new tags here as well as a description. This is the only place to add new tags so that they can be assigned to products.
-              Makes it easier to avoid duplicate tags. Admins can also manually add sales or expenses. This is here for transactions like cash sales, or someone donating money. The expenses section is
-              for expenses like employee payments, supply restocks, or any other business related expenses such as adspace payments. Manually logged expenses and sales
-              can be added individually and detailed, or grouped into one amount with a simple description like "restocks". That's why there's a description option,
-              and admins can log this data however they please, it's their website. The reason for having these options is just to display the general dollar amounts to users 
-              for transparency.
+              Admins can add new tags here as well as a description for them. This is the only place to add new tags so that they can be assigned to products and threads.
             </p>
           </div>
           <div class="image_container">
@@ -177,6 +175,30 @@
             </a>
             <p class="caption">
               Also on transparency panel, table of sales, expenses, all product tags, and supplies.
+            </p>
+          </div>
+          <div class="image_container">
+            <a href="./img/transparent_storefront/forum.PNG" target="_blank" class="image_grid_item">
+              <img src="./img/transparent_storefront/forum.PNG">
+            </a>
+            <p class="caption">
+              Forum page. It includes threads created by users and a list of rules. The purpose of having a forum is so that users can easily ask questions or have discussions about products.
+            </p>
+          </div>
+          <div class="image_container">
+            <a href="./img/transparent_storefront/thread.PNG" target="_blank" class="image_grid_item">
+              <img src="./img/transparent_storefront/thread.PNG">
+            </a>
+            <p class="caption">
+              View of a thread. Users can reply to any thread unless they are banned.
+            </p>
+          </div>
+          <div class="image_container">
+            <a href="./img/transparent_storefront/post_reactions.PNG" target="_blank" class="image_grid_item">
+              <img src="./img/transparent_storefront/post_reactions.PNG">
+            </a>
+            <p class="caption">
+              Users can react to posts. Each reaction has a different value that adds to the post's reaction score. Reaction scores can go into the negatives if they are poorly received.
             </p>
           </div>
         </div>
