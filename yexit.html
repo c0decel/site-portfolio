@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lexend+Deca&display=swap" rel="stylesheet">
+        <title id="top">Portfolio</title>
+    </head>
+    <body>
+        <header class="page-header">
+            <h1>Yexit</h1>
+            <nav>
+              <ul role ="menubar" class="navigation-list">
+                <li role="presentation">
+                  <a href="#overview" role="menuitem" class="navigation-list__item">Overview</a>
+                </li>
+                <li role="presentation">
+                  <a href="#credits" role="menuitem" class="navigation-list__item">Credits</a>
+                </li>
+                <li role="presentation">
+                  <a href="#screenshots" role="menuitem" class="navigation-list__item">Screenshots</a>
+                </li>
+                <li role="presentation">
+                  <a href="#retrospective" role="menuitem" class="navigation-list__item">Retrospective</a>
+                </li>
+                <li role="presentation">
+                  <a href="index.html" role="menuitem" class="navigation-list__item">Go back</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <main style="text-align: center;">
+            <div class="section" id="overview">
+                <div class="overview-content">
+                  <h1>Overview</h1>
+                  <div class="grid__item">
+                    <p>
+                      Transparent Storefront is a commerce template developed with the MEAN stack that allows users to display financial data and production to their customers
+                    </p>
+                  </div>
+                  <img src="./img/yexit/1.PNG">
+                <div class="grid">
+                    <div class="grid__item">
+                        <h2>Purpose and context</h2>
+                        <p>
+                          Yexit was created to make it easier to leave YouTube by going through your subscriptions and telling you who has accounts on alternate video sharing platforms like Kick, Rumble, and Odysee. 
+                          YouTube has done its best to snuff out free expression on their platform and frequently changes their TOS to censor creators who rely on ad revenue for a living. 
+                          There are many alternatives to YouTube, but content creators and viewers hesitate to make the switch due to the smaller audience size of the competition. 
+                          Yexit aims to encourage viewers and creators to move to platforms that promote free speech.
+                        </p>
+                    </div>
+    
+                    <div class="grid__item">
+                        <h2>Objective</h2>
+                        <p>
+                          Abandoning YouTube is hard. It takes a long time to manually check each channel you're subscribed to and go through their bio in the hopes you can find them on other platforms,
+                          especially if you're subscribed to many channels. This process is quick and easy with Yexit.                    
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="section" id="screenshots">
+                <h1>Screenshots</h1>
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+                <div class="gallery">
+                    <div class="image_container">
+                        <a href="./img/yexit/3.PNG" target="_blank" class="image_grid_item">
+                            <img src="./img/yexit/3.PNG">
+                        </a>
+                        <p class="caption">
+                          Homepage for logging in with YouTube.
+                        </p>
+                    </div>
+                    <div class="image_container">
+                        <a href="./img/yexit/1.PNG" target="_blank" class="image_grid_item">
+                            <img src="./img/yexit/1.PNG">
+                        </a>
+                        <p class="caption">
+                          List of subscriptions and found alts.
+                        </p>
+                    </div>
+                    <div class="image_container">
+                        <a href="./img/yexit/5.PNG" target="_blank" class="image_grid_item">
+                            <img src="./img/yexit/5.PNG">
+                        </a>
+                        <p class="caption">
+                          Points scoring system.
+                        </p>
+                    </div>
+                    <div class="image_container">
+                        <a href="./img/yexit/2.PNG" target="_blank" class="image_grid_item">
+                            <img src="./img/yexit/2.PNG">
+                        </a>
+                        <p class="caption">
+                          If an X account is found, there are some pre-written posts. Clicking on them will redirect you to X if you are logged in.
+                        </p>
+                    </div>
+                    <div class="image_container">
+                        <a href="./img/yexit/4.PNG" target="_blank" class="image_grid_item">
+                            <img src="./img/yexit/4.PNG">
+                        </a>
+                        <p class="caption">
+                          If the found user has any confirmed matches (extracted directly from channel bio), there's an option to show your appreciation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="retrospective">
+                <h1>Retrospective</h1>
+                <div class="grid">
+                  <div class="grid__item">
+                    <h2>Successes</h2>
+                    <p>YouTube's API doesn't give too much information about the channel, but I think I did well working with what the API provided.</p>
+                  </div>
+        
+                  <div class="grid__item">
+                    <h2>Challenges</h2>
+                    <p>Checking valid URLs on sites like Odysee or Bitchute is more difficult as even if a channel doesn't exist, it returns a 200 status code.
+                    While this is a challenge, I will find a way around it. Additionally, YouTube subscriptions API doesn't return custom channel URLs or the links section, so all links are taken from the description only.
+                    Because of these challenges, some methods I have in mind will end up being more time consuming to use but provide more accurate data.</p>
+                  </div>
+        
+                  <div class="grid__item">
+                    <h2>Future steps</h2>
+                    <p>I plan to find a way to compare upload dates between YouTube and the found alt platforms to check whether the alt channel is actively uploading or just being used to park the username.
+                    If the upload count/dates are significantly different, there will be an option to compose X posts suggesting that the user starts actively mirroring their content on other sites.
+                    I will likely do this by scraping the upload dates from each site. Because it will be more time consuming, I will only have it check every 7 days.
+                    Additionally, I will find the easiest way to get the custom channel URLs and use the user handle to check for valid URLs on alternate platforms.</p>
+                  </div>
+        
+                  <div class="grid__item">
+                    <h2>Thoughts</h2>
+                    <p>Though this tool can be improved and made more accurate, it's a good first step. Using Yexit only takes a fraction of the time it would take to manually go through each YouTube subscription and check their bios.</p>
+                  </div>
+                </div>
+              </div>
+          </main>
+          <footer class="page-footer">
+            <p>Where I'm at</p>
+              <div class="social-media">
+              <a href="https://github.com/c0decel"><img src="img/git.svg" alt="Github"></a>
+              <a href="https://twitter.com"><img src="img/twit.svg" alt="Twitter"></a>
+              <a href="https://www.linkedin.com/in/thimade/"><img src="img/linked.svg" alt="LinkedIn"></a>
+              <a href="https://t.me/mentheauls" alt="Telegram"><img src="img/tg.svg"></a>
+            </div>
+          </footer>
+          <script src="js/tota11y.min.js"></script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const images = document.querySelectorAll('.image_container');
+              const prevBtn = document.querySelector('.prev-btn');
+              const nextBtn = document.querySelector('.next-btn');
+              let currentIndex = 0;
+          
+              function showImage(index) {
+                images.forEach((image, i) => {
+                  if (i === index) {
+                    image.style.display = 'block';
+                  } else {
+                    image.style.display = 'none';
+                  }
+                });
+              }
+          
+              prevBtn.addEventListener('click', function() {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                console.log("Previous Button Clicked, currentIndex: ", currentIndex);
+                showImage(currentIndex);
+              });
+          
+              nextBtn.addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % images.length;
+                console.log("Next Button Clicked, currentIndex: ", currentIndex);
+                showImage(currentIndex);
+              });
+    
+              showImage(currentIndex);
+            });
+          </script>
+    </body>
+</html>
